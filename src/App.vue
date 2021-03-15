@@ -1,28 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nft msg="Create Your First NFT" title="NFT Maker" />
+    <contract msg="Upload to Contract" title="NFT Maker" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Nft from './components/Nft.vue'
+import Contract from './components/Contract.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Nft,
+    Contract
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
